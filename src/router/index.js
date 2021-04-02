@@ -6,6 +6,8 @@ const Special = () => import('../views/Special')
 const Category = () => import('../views/Category')
 const Cart = () => import('../views/Cart')
 const Mine = () => import('../views/Mine')
+const CategoryList = () => import('../views/CategoryList')
+const Detail = () => import('../views/Detail')
 
 Vue.use(VueRouter)
 
@@ -16,19 +18,40 @@ const routes = [
   },
   {
     path: '/home',
-    component: Home
+    component: Home,
+    meta: {
+      showTab: true
+    }
   }, {
     path: '/special',
-    component: Special
+    component: Special,
+    meta: {
+      showTab: true
+    }
   }, {
     path: '/category',
-    component: Category
+    component: Category,
+    meta: {
+      showTab: true
+    }
   }, {
     path: '/cart',
-    component: Cart
+    component: Cart,
+    meta: {
+      showTab: true
+    }
   }, {
     path: '/mine',
-    component: Mine
+    component: Mine,
+    meta: {
+      showTab: true
+    }
+  }, {
+    path: '/categorylist/:id',
+    component: CategoryList
+  }, {
+    path: '/detail/:id',
+    component: Detail
   }
 ]
 

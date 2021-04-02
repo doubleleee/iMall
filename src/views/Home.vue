@@ -30,7 +30,7 @@
       <van-grid :column-num="2">
         <van-grid-item v-for="(item, index) in brandList" :key="index">
           <van-image :src="item.new_pic_url" />
-          <h3 class="title1">{{ item.name }}</h3>
+          <h5 class="title1">{{ item.name }}</h5>
           <p class="price1">{{ item.floor_price }}元起</p>
         </van-grid-item>
       </van-grid>
@@ -44,7 +44,7 @@
       <van-grid :column-num="2">
         <van-grid-item v-for="(item, index) in newGoodsList" :key="index">
           <van-image :src="item.list_pic_url" />
-          <h3 class="title2">{{ item.name }}</h3>
+          <h5 class="title2">{{ item.name }}</h5>
           <p class="price2">￥{{ item.retail_price }}</p>
         </van-grid-item>
       </van-grid>
@@ -117,12 +117,15 @@ export default {
   position: absolute;
   top: 20px;
   left: 10px;
-  font-weight: 600;
+  margin: 0;
 }
 .price1 {
   position: absolute;
   top: 45px;
   left: 10px;
+  margin: 0;
+  font-size: 12px;
+  color: #646566;
 }
 .van-image {
   border: 1px solid #fff;
@@ -132,7 +135,7 @@ export default {
   padding-top: 10px;
 }
 .title2 {
-  font-weight: 600;
+  margin: 0;
 }
 .price2 {
   margin-bottom: 5px;

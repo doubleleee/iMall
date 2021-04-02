@@ -20,6 +20,7 @@
             :key="index"
             :icon="item.wap_banner_url"
             :text="item.name"
+            :to="'/categorylist/' + item.id"
           />
         </van-grid>
       </template>
@@ -60,7 +61,6 @@ export default {
         this.items.push(item);
       });
       this.clickRight(0);
-      console.log(res);
     },
 
     // 请求当前目录分类数据
@@ -87,5 +87,8 @@ img {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
+}
+.van-sidebar {
+  text-align: center;
 }
 </style>
