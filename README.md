@@ -2,7 +2,7 @@
 
 ## 后台文件
 ```
-https://github.com/doubleleee/iMall-server.git
+<https://github.com/doubleleee/iMall-server.git>
 ```
 
 
